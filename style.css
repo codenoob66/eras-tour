@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.second_part {
+  background-color: #222a47;
+  margin-top: 0;
+  padding-top: 50px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.main_cover {
+  background-image: url(https://i0.wp.com/getreelmovies.com/wp-content/uploads/2023/10/GRM_taylorswift_banner.jpg?fit=2560%2C1297&ssl=1);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0;
+  position: relative;
+  background-size: cover;
+}
+
+.main_cover button {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 560px;
+  height: 50px;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+iframe {
+  margin-bottom: 70px;
+}
+
+.second_part h2 {
+  display: block;
+  margin: 20px 0;
+  color: white;
+  clear: both;
+}
+
+.main_title {
+  font-size: 2em;
+}
+
+.subtitle {
+  font-size: 3.5em;
+}
+
+.footer {
+  background-color: antiquewhite;
+  margin: -20px 0 0 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-inputs {
+  display: flex; /* Align items side by side */
+  justify-content: center; /* Center the items horizontally */
+  gap: 10px; /* Space between the input and select */
+  margin-bottom: 15px; /* Space below the input area */
+}
+
+.footer input {
+  padding: 10px;
+  width: 200px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.footer select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.submit-container {
+  display: flex; /* Align button and description in a row */
+  flex-direction: column; /* Stack them vertically */
+  align-items: center; /* Center align items */
+}
+
+.footer button {
+  padding: 10px 20px; /* Add padding for button */
+  border: 1px solid black; /* Remove border */
+  background-color: transparent;
+  color: black; /* Text color */
+  cursor: pointer; /* Pointer cursor */
+  margin-top: 10px; /* Space above the button */
+}
+
+.footer h3 {
+  margin-top: 10px; /* Space above the description */
+  font-size: 0.9em; /* Adjust font size */
+  color: #333; /* Text color */
+  max-width: 600px; /* Optional: set a max width */
+  text-align: center; /* Center the text */
+}
+
+.line {
+  width: 98vw; /* Set width to 95% of the viewport width */
+  border: none; /* Remove the default border */
+  border-top: 2px solid black; /* Create a top border for the line */
+  margin: auto; /* Center the line with automatic margins on the sides */
+  background-color: antiquewhite;
+}
+
+.last_part {
+  background-color: antiquewhite;
+  align-items: flex-start;
+  height: 50px;
+  padding: 25px 0 0 10px;
+}
+
+.last_part a {
+  color: black;
+}
