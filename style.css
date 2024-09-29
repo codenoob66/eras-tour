@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Big Calson FB";
+  src: url(fonts/BigCaslonFB-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +19,7 @@
   color: white;
   display: block;
   text-align: center;
+  margin-bottom: 0;
 }
 
 body {
@@ -47,7 +55,6 @@ iframe {
 
 .second_part h2 {
   display: block;
-  margin: 20px 0;
   color: white;
   clear: both;
 }
@@ -60,75 +67,144 @@ iframe {
   font-size: 3.5em;
 }
 
+.grid-container {
+  background-color: #222a47;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  align-items: flex-start;
+  font-family: "Big Calson FB";
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+
+.grid-item a {
+  color: white;
+}
+
 .footer {
-  background-color: antiquewhite;
+  background-color: rgb(238, 233, 227);
   margin: -20px 0 0 0;
   padding: 20px;
   text-align: center;
 }
 
 .footer h2 {
-  margin-bottom: 10px; /* Space below the heading */
+  margin-bottom: 10px;
+  font-family: "Big Calson FB";
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .footer-inputs {
-  display: flex; /* Align items side by side */
-  justify-content: center; /* Center the items horizontally */
-  gap: 10px; /* Space between the input and select */
-  margin-bottom: 15px; /* Space below the input area */
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer input {
   padding: 10px;
-  width: 200px; /* Adjust width as needed */
+  width: 20%;
   border: 1px solid #ccc;
-  border-radius: 4px; /* Rounded corners */
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  border-top: none;
 }
 
 .footer select {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px; /* Rounded corners */
+  border-top: none;
+  background: transparent;
+  border-right: none;
+  border-left: none;
+  width: 20%;
 }
 
 .submit-container {
-  display: flex; /* Align button and description in a row */
-  flex-direction: column; /* Stack them vertically */
-  align-items: center; /* Center align items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Big Calson FB";
+  max-width: 100%;
 }
 
 .footer button {
-  padding: 10px 20px; /* Add padding for button */
-  border: 1px solid black; /* Remove border */
+  padding: 10px 20px;
+  border: 1px solid black;
   background-color: transparent;
-  color: black; /* Text color */
-  cursor: pointer; /* Pointer cursor */
-  margin-top: 10px; /* Space above the button */
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .footer h3 {
-  margin-top: 10px; /* Space above the description */
-  font-size: 0.9em; /* Adjust font size */
-  color: #333; /* Text color */
-  max-width: 600px; /* Optional: set a max width */
-  text-align: center; /* Center the text */
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+  max-width: 600px;
+  text-align: center;
 }
 
 .line {
-  width: 98vw; /* Set width to 95% of the viewport width */
-  border: none; /* Remove the default border */
-  border-top: 2px solid black; /* Create a top border for the line */
-  margin: auto; /* Center the line with automatic margins on the sides */
+  width: 98vw;
+  border: none;
+  border-top: 2px solid black;
+  margin: auto;
   background-color: antiquewhite;
 }
 
 .last_part {
-  background-color: antiquewhite;
+  background-color: rgb(238, 233, 227);
   align-items: flex-start;
   height: 50px;
-  padding: 25px 0 0 10px;
+  padding: 20px 0 0 10px;
 }
 
 .last_part a {
   color: black;
+  font-family: "Big Calson FB";
+  font-size: 0.8125rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    margin-left: 0;
+  }
+
+  .main_cover button {
+    width: 90%;
+  }
+
+  .footer-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer input,
+  .footer select {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .main_title,
+  .subtitle {
+    font-size: 1.5em; /* Scale down titles */
+  }
 }
